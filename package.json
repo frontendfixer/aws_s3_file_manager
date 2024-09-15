@@ -1,8 +1,20 @@
 {
   "name": "aws_s3_file_manager",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
+  "description": "A file manager for AWS S3 bucket with aws-sdk and drizzle",
+  "author": {
+    "name": "Lakshmikanta Patra",
+    "email": "frontendfixer@gmail.com",
+    "url": "https://frontendfixer.github.io/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontendfixer/aws_s3_file_manager.git"
+  },
+  "homepage": "https://github.com/frontendfixer/aws_s3_file_manager#readme",
   "scripts": {
     "build": "next build",
     "db:generate": "drizzle-kit generate",
@@ -11,16 +23,24 @@
     "db:studio": "drizzle-kit studio",
     "dev": "next dev",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "start": "next start"
   },
   "dependencies": {
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@t3-oss/env-nextjs": "^0.10.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "drizzle-orm": "^0.33.0",
     "geist": "^1.3.0",
+    "lucide-react": "^0.441.0",
     "mysql2": "^3.11.0",
     "next": "^14.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.3"
   },
   "devDependencies": {
@@ -33,7 +53,13 @@
     "drizzle-kit": "^0.24.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.4",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-drizzle": "^0.2.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "postcss": "^8.4.39",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
